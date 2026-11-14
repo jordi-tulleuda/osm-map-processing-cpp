@@ -1,0 +1,29 @@
+# CMake output
+/build/
+/cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+/Testing/
+
+# Editors / IDEs
+.idea/
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Compiled artifacts
+*.obj
+*.o
+*.a
+*.lib
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.so
+*.dylib
+
+# OS files
+.DS_Store
+Thumbs.db
