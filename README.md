@@ -2,9 +2,9 @@
 
 **C++17 · Object-oriented programming · Geographic data · XML-based map structures**
 
-A university team project from **Laboratori de Programació** at the Universitat Autònoma de Barcelona (UAB). We implemented the map-domain logic inside an **instructor-provided project structure**: extracting points of interest and street paths from OpenStreetMap-style elements, organizing coordinates, and applying tag-based presentation rules.
+A **completed university team assignment** from **Laboratori de Programació** at the Universitat Autònoma de Barcelona (UAB). Working from an instructor-provided project structure, our team implemented the C++ map-domain logic for OpenStreetMap data: extracting points of interest and street paths, organizing coordinates, and applying tag-based classification and visualization rules.
 
-> **Scope:** This is a map-data-processing component, **not** a working GPS route planner. The `shortestPath` hook in the original Windows starter application was not implemented in the provided submission.
+> **Portfolio scope:** This repository presents the team's completed OpenStreetMap **map-processing assignment** as a portable, source-only edition. The instructor-provided Windows graphical environment is not redistributed, and the portfolio edition does not offer a route-planning application.
 
 ## How it works
 
@@ -18,7 +18,7 @@ flowchart LR
   F --> G[Tag-based display colors]
 ```
 
-The original university framework handled XML import and a Windows WPF map visualization. **This repository contains only the portable C++ model layer** and an independently runnable example, not the original GUI or bundled third-party library.
+The instructor-provided university framework handled XML import and a Windows WPF map visualization. **This public portfolio edition contains the portable C++ model layer** and an independently runnable example, not the original GUI or bundled third-party library.
 
 ## Implemented in the team submission
 
@@ -81,7 +81,7 @@ CMakeLists.txt              Portable build configuration
 
 - Works on `XmlElement` objects **already parsed** by the original university infrastructure; does not directly read `.osm` files in this release.
 - Supports a limited set of tag categories. It is not a full OpenStreetMap data model.
-- No route search is included: the original `shortestPath` entry point was empty.
+- The original Windows starter code contained a `shortestPath` placeholder marked `DO NOT TOUCH`, alongside a UI comment identifying shortest-path support as a "2nd part". Its presence does **not** establish that the submitted map-processing assignment was unfinished.
 - The Windows WPF map renderer, DLL bridge, and bundled Xerces-C++ library have been excluded from this shareable source-only subset.
 
 See the [technical limitations](docs/limitations.md) for more detail.
